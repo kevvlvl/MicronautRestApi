@@ -1,3 +1,10 @@
+## Example of Rest API using Micronaut
+
+Using features such as
+- Controllers
+- Jackson serialize/deserialize
+
+
 ## Micronaut 2.4.2 Documentation
 
 - [User Guide](https://docs.micronaut.io/2.4.2/guide/index.html)
