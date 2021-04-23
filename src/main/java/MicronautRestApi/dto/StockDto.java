@@ -10,14 +10,17 @@ public class StockDto {
     private final String symbol;
     private final String name;
     private final BigDecimal stockValue;
+    private final int total;
 
     @JsonCreator
     public StockDto(@JsonProperty("symbol") String symbol,
                     @JsonProperty("name") String name,
-                    @JsonProperty("stockValue") BigDecimal stockValue) {
+                    @JsonProperty("stockValue") BigDecimal stockValue,
+                    @JsonProperty("total") int total) {
         this.symbol = symbol;
         this.name = name;
         this.stockValue = stockValue;
+        this.total = total;
     }
 
     public String getSymbol() {
@@ -30,5 +33,9 @@ public class StockDto {
 
     public BigDecimal getStockValue() {
         return stockValue;
+    }
+
+    public int getTotal() {
+        return total;
     }
 }
