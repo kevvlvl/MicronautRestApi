@@ -11,6 +11,11 @@ Using features such as
 | Run the microservice | ```./gradlew run```                        |
 | Query an endpoint    | ```curl http://localhost:8080/fin/stock``` |
 
+endpoints available:
+* blocking: http://localhost:8080/fin/stock
+* non-blocking Single: http://kevthinkpad:8080/fin/nb/stock
+* non-blocking Multiple: http://kevthinkpad:8080/fin/nb/stocks
+
 ## Micronaut 2.4.2 Documentation
 
 - [User Guide](https://docs.micronaut.io/2.4.2/guide/index.html)

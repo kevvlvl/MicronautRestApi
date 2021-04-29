@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class StockDto {
 
@@ -32,7 +33,7 @@ public class StockDto {
     }
 
     public BigDecimal getStockValue() {
-        return stockValue;
+        return stockValue.setScale(2, RoundingMode.DOWN);
     }
 
     public int getTotal() {
