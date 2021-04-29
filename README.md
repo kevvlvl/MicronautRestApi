@@ -4,6 +4,12 @@ Using features such as
 - Controllers
 - Jackson serialize/deserialize
 
+## Commands
+
+| Action               | Command                                    |
+| :------------------- | :----------------------------------------- |
+| Run the microservice | ```./gradlew run```                        |
+| Query an endpoint    | ```curl http://localhost:8080/fin/stock``` |
 
 ## Micronaut 2.4.2 Documentation
 
