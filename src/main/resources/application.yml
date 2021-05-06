@@ -1,3 +1,17 @@
 micronaut:
   application:
     name: micronautRestApi
+  metrics:
+    enabled: true
+endpoints:
+  all:
+    path: /mgmt
+  health:
+    enabled: true
+    details-visible: ANONYMOUS
+  refresh:
+    enabled: true
+  loggers:
+    enabled: true
+  routes:
+    enabled: true

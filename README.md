@@ -6,10 +6,22 @@ Using features such as
 
 ## Commands
 
-| Action               | Command                                    |
-| :------------------- | :----------------------------------------- |
-| Run the microservice | ```./gradlew run```                        |
-| Query an endpoint    | ```curl http://localhost:8080/fin/stock``` |
+| Action                                             | Command                                                 |
+| :------------------------------------------------- | :------------------------------------------------------ |
+| Run the microservice                               | ```./gradlew run```                                     |
+| Query an endpoint                                  | ```curl http://localhost:8080/fin/stock```              |
+| Causes all refreshable beans to get reinstantiated | ```curl -X POST http://kevthinkpad:8080/mgmt/refresh``` |
+
+## Management Endpoints
+
+The following endpoints provide observability to the application:
+
+| Endpoint        | Purpose                    |  Command                                        |
+| :-------------- | :------------------------- | :---------------------------------------------- |
+| Health          | Health status              | ```curl http://kevthinkpad:8080/mgmt/health```  |
+| Metrics         | Metrics                    | ```curl http://kevthinkpad:8080/mgmt/metrics``` |
+| Loggers         | View and obtain log levels | ```curl http://kevthinkpad:8080/mgmt/loggers``` |
+
 
 endpoints available:
 * blocking: http://localhost:8080/fin/stock
